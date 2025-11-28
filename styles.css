@@ -2,17 +2,16 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* flex container - HEADER */
 #header {
     display: flex;
     margin: -10px;
     background-color: #1F2937;
-    /* color: white; */
 }
 
 #header h1 {
     flex: 1 1 1;
-    color: white;
-    /* border: 4px solid white; */
+    color: #F9FAF8;
     width: fit-content;
     margin: 20px;
     margin-left: 100px;
@@ -31,35 +30,37 @@
 #header .header_links a {
     color: white;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 #header .header_links a:hover {
     color: #9CA3AF;
 }
 
+/* flex container - BODY*/
 #top_body {
     display: flex;
     background-color: #1F2937;
     gap: 25px;
     margin: -10px;
-    padding-bottom: 100px;
-    padding-top: 50px;
-    
-    
+    height: 500px;
+
 }
 
 #top_body > .left_side {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
 }
 
 #top_body .landscape_image {
     /* flex: 1 1 1; */
-    height: 200px;
-    width: 450px;
+    height: 60%;
+    width: 80%;
     margin-left: auto;
     margin-right: 100px;
+    padding-top: 50px;
 }
 
 
@@ -68,7 +69,7 @@
     color: white;
     font-size: 35px;
     margin-left: 100px;
-    width: 250px;
+    width: 400px;
     height: fit-content;
 }
 
@@ -77,10 +78,9 @@
     color: white;
     font-size: 14px;
     margin-left: 100px;
-    width: 350px;
+    width: auto;
     height: fit-content;
     margin-top: -10px;
-    /* margin-bottom: 20px; */
 }
 
 .left_side button {
@@ -90,27 +90,35 @@
     background-color: #3882F6;
     color: white;
     height: 30px;
+    border: none;
+    border-radius: 10px;
 }
 
+.left_side button:hover {
+    background-color: #2563EB;
+    cursor: pointer;
+}
+
+.left_side button:active {
+    background-color: #1D4ED8;
+}
+
+/* flex container */
 #main_body{
     display: flex;
     flex-direction: column;
-    /* border: 4px solid black; */
     margin: -10px;
-    /* padding: 10px; */
-    padding-top: 50px;
-    padding-bottom: 50px;
+    height: 500px;
+    justify-content: center;
 }
 
 #main_body h1 {
     justify-content: center;
     text-align: center;
-    /* gap: 50px; */
 }
 
 #main_body .images {
     display: flex;
-    /* border: 4px solid red; */
     gap: 50px;
     justify-content: center;
 
@@ -118,7 +126,8 @@
 #main_body img {
     height: 150px;
     width: 150px;
-    border: 5px #3882F6 solid;
+    border: 2px #3882F6 solid;
+    border-radius: 10px;
 }
 
 #main_body .image_sub {
@@ -126,7 +135,6 @@
     justify-content: center;
     height: 110px;
     gap: 60px;
-    /* border: 5px #3882F6 solid; */
 }
 
 #main_body .image_sub p {
@@ -135,12 +143,14 @@
     text-align: center;
 }
 
+/* flex container */
 #quote {
     background-color: #E5E7EB;
     margin: -10px;
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    height: 500px;
+    justify-content: center;
     
 }
 
@@ -150,8 +160,6 @@
     font-size: 36px;
     color: #1F2937;
     font-weight: 300;
-    /* width: 80%; */
-    padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
     
@@ -164,7 +172,6 @@
     font-size: 24px;
     color: #1F2937;
     font-weight: bold;
-    padding-bottom: 80px;
     margin-top: -10px;
 }
 
@@ -172,9 +179,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    /* border: 5px #3882F6 solid; */
+    height: 500px;
 }
 
 #sign_up .sign_up_banner{
@@ -182,8 +187,6 @@
     background-color: #3882F6;
     width: 75%;
     align-content: center;
-    /* justify-content: center; */
-    /* color: white; */
 }
 
 #sign_up .sign_up_banner .text {
@@ -217,8 +220,18 @@
     border: none;
     outline: none;
     border: 2px #E5E7EB solid;
+    border-radius: 10px;
+}
+#sign_up .sign_up_banner button:hover {
+    background-color: #2563EB;
+    cursor: pointer;
 }
 
+#sign_up .sign_up_banner button:active {
+    background-color: #1D4ED8;
+}
+
+/* flex container - FOOTER*/
 #footer {
     display: flex;
     background-color: #1F2937;
