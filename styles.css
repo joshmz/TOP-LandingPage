@@ -97,7 +97,9 @@
     flex-direction: column;
     /* border: 4px solid black; */
     margin: -10px;
-    padding: 10px;
+    /* padding: 10px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #main_body h1 {
@@ -122,7 +124,113 @@
 #main_body .image_sub {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    border: 5px #3882F6 solid;
+    height: 110px;
+    gap: 60px;
+    /* border: 5px #3882F6 solid; */
 }
+
+#main_body .image_sub p {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+}
+
+#quote {
+    background-color: #E5E7EB;
+    margin: -10px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    
+}
+
+#quote .quote_text {
+    flex: 1 1 1;
+    text-align: center;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    /* width: 80%; */
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+#quote .author {
+    flex: 1 1 1;
+    text-align: right;
+    margin-right: 150px;
+    font-size: 24px;
+    color: #1F2937;
+    font-weight: bold;
+    padding-bottom: 80px;
+    margin-top: -10px;
+}
+
+#sign_up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    /* border: 5px #3882F6 solid; */
+}
+
+#sign_up .sign_up_banner{
+    display: flex;
+    background-color: #3882F6;
+    width: 75%;
+    align-content: center;
+    /* justify-content: center; */
+    /* color: white; */
+}
+
+#sign_up .sign_up_banner .text {
+    flex: 1 1 1;
+    color: white;;
+}
+
+#sign_up .sign_up_banner .text h1 {
+    font-size: 24px;
+    padding-left: 100px;
+    padding-top: 25px;
+}
+
+#sign_up .sign_up_banner .text p {
+    font-size: 14px;
+    padding-left: 100px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+#sign_up .sign_up_banner button {
+    flex: 1 1 1;
+    height: 40px;
+    width: 150px;   
+    margin-left: auto;
+    margin-right: 100px;
+    margin-top: 45px;
+    background-color: #3882F6;
+    color: white;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border: 2px #E5E7EB solid;
+}
+
+#footer {
+    display: flex;
+    background-color: #1F2937;
+    margin: -10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center;
+}
+
+#footer p {
+    color: white;
+    font-size: 15px;
+}
+
 
